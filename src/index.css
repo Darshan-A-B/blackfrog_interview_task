@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-container {
+  flex-basis: 75%;
+  max-width: 75%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+  float: right;
+  overflow-y: auto;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.form-container input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-container .form-group .form-control {
+  flex-basis: 48%;
+  max-width: 48%;
+}
+
+.dashboard {
+  flex-basis: 25%;
+  max-width: 25%;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  
+}
+
+.dashboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.dashboard li {
+  margin-bottom: 10px;
+}
+
+.dashboard a {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .form-container {
+    flex-basis: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
